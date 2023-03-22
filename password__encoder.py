@@ -37,5 +37,8 @@ if __name__ == '__main__':
             password = input('Please enter your password to encode:')
             encoded_password = encoder(password)
             print('Your password has been encoded and stored!')
+        if option == 2:
+            decoded_password = decoder(encoded_password)
+            print(f'The encoded password is {encoded_password} and the decoded password is {decoded_password}')
         if option == 3:
             condition = False
