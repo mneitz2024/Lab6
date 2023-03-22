@@ -10,6 +10,16 @@ def encoder(string):  # function to encode passwords
     return encoded_string
 
 
+def decoder(string):
+    decoded_string = ''
+    for i in string:
+        i = int(i)
+        x = i - 3
+        y = str(x)
+        decoded_string += y
+    return decoded_string
+
+
 if __name__ == '__main__':
     condition = True
     while condition is True:
